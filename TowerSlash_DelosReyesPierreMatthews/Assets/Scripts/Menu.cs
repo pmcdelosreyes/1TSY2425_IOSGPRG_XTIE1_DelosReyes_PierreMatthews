@@ -97,24 +97,6 @@ public class Menu : MonoBehaviour
 
         }
     }
-    
-    public void PreviousCharacter()
-    {
-        switch (characterInt)
-        {
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-
-            default:
-                break;
-
-        }
-    }
-
     private void ResetInt()
     {
         if (characterInt >= 3)

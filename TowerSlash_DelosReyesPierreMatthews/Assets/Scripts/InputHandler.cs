@@ -149,13 +149,12 @@ public class InputHandler : MonoBehaviour
 
             if (Mathf.Abs(swipeDistance.x) < tapRange && Mathf.Abs(swipeDistance.y) < tapRange)
             {
-                UpdateInputText("tap");
-                Debug.Log("Small Dash");
-                GameManager.Instance.Score += 0.01f;
+                UpdateInputText("Tap");
+                GameManager.Instance.Score += 0.1f;
 
                 foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
                 {
-                    enemy.transform.Translate(Vector2.down * 50 * Time.deltaTime);
+                    enemy.transform.Translate(Vector2.down * 100 * Time.deltaTime);
                 }
             }
         }
